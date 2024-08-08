@@ -1,24 +1,27 @@
-<?php
-$Producto1= $_POST ['Producto1'];
-$precio1=$_POST ['precio1'];
-
-$Producto2= $_POST ['Producto2'];
-$precio2=$_POST ['precio2'];
-
-$Producto3= $_POST ['Producto3'];
-$precio3=$_POST ['precio3'];
-
-$sumaPrecios=$precio1+$precio2+$precio3;
-$descuento=$sumaPrecios*0.16;
-$totalPagar=$sumaPrecios-$descuento;
-
-echo "Productos:<br>";
-echo "$producto1<br>";
-echo "$producto2<br>";
-echo "$producto3<br>";
-echo "suma de precios:$".$sumaPrecios ."<br>";
-echo "Descuento (16%):$" .$descuento. "<br>";
-echo "TOTAL A PAGAR:$" .$totalPagar. "<br>";
-?>
+ <?php
+        $nombrel="POST" ['nombrel'];
+        $preciol="POST" ['preciol'];
+        
+        $nombre2="_POST" ['nombre2'];
+        $precio2="_POST" ['precio2'];
+        
+        $nombre3="_POST" ['nombre3']; 
+        $precio3="_POST" ['precio3'];
+        
+        $suma=$preciol+$precio2+$precio3;
+        
+        $descuento=$suma*0.16/100;
+        
+        $total_pagar=$suma-$descuento;
+        
+        echo "productos:";
+        echo "$nombrel, $nombre2, $nombre3";
+        echo "<'/br'>";
+        echo "suma de precios: ".$suma;
+        echo "<'/br'>";
+        echo "Descuento: ".$descuento;
+        echo "<'/br'>";
+        echo "total a pagar: ".$total_pagar;
+        ?>
 
 
